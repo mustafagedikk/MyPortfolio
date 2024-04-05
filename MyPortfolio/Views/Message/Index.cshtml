@@ -1,0 +1,43 @@
+﻿@model List<MyPortfolio.Models.Tbl_Messages>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<br />
+<h3>MESAJLAR</h3>
+<br />
+
+
+
+<table class="table table table-bordered">
+
+    <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Email</th>
+        <th>Konu</th>
+        <th>Mesaj Detayı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MessageID</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Subject</td>
+            <td>@item.MessageContent</td>
+            <td><a href="/About/DeleteAbout/@item.MessageID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/About/UpdateAbout/@item.MessageID" class="btn btn-info">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+<br />
+<a href="/About/AddAbout" class="btn btn-outline-secondary">Yeni hakkımda Ekle</a>
+

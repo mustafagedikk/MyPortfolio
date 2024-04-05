@@ -1,0 +1,48 @@
+﻿@model List<MyPortfolio.Models.Tbl_Teams>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<br />
+<h3>TAKIM ARKADAŞLARI</h3>
+<br />
+
+<table class="table table table-bordered">
+
+    <tr>
+        <th>#</th>
+        <th>ImageUrl</th>
+        <th>Adı Soyadı</th>
+        <th>Açıklama</th>
+        <th>TwitterUrl</th>
+        <th>FacebookUrl</th>
+        <th>LinkedinUrl</th>
+        <th>İnstagramUrl</th>
+        <th>Title</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TeamId</td>
+            <td>@item.ImageUrl</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Description</td>
+            <td>@item.TwitterUrl</td>
+            <td>@item.FacebookUrl</td>
+            <td>@item.LinkedinUrl</td>
+            <td>@item.İnstagramUrl</td>
+            <td>@item.Title</td>
+            <td><a href="/Team/DeleteTeam/@item.TeamId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Team/UpdateTeam/@item.TeamId" class="btn btn-info">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+<br />
+<a href="/Team/AddTeam" class="btn btn-outline-secondary">Yeni Takım Arkadaşı Ekle</a>

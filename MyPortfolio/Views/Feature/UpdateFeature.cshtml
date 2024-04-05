@@ -1,0 +1,22 @@
+﻿@model MyPortfolio.Models.Tbl_Features
+@{
+    ViewBag.Title = "UpdateFeature";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>ÖNE ÇIKAN GÜNCELLE</h2>
+
+<form method="post">
+
+    <input type="hidden" name="FeatureId" value="@Model.FeatureId" />
+    <label>Ad Soyad</label>
+    <input type="text" value="@Model.NameSurname" name="NameSurname" class=" form-control" />
+    <label>Ünvan</label>
+    <input type="text" value="@Model.Title" name="Title" class="form-control" />
+    <label>ImageUrl</label>
+    <input type="text" value="@Model.ImageUrl" name="ImageUrl" class="form-control" />
+    <br />
+    <button class="btn btn-secondary">KAYDET</button>
+
+
+</form>

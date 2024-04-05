@@ -1,0 +1,22 @@
+﻿@model MyPortfolio.Models.Tbl_Services
+@{
+    ViewBag.Title = "UpdateService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>HİZMETLERİ GÜNCELLE</h2>
+
+<form method="post">
+
+    <input type="hidden" name="ServiceId" value="@Model.ServiceId" />
+    <label>Image Url</label>
+    <input type="text" value="@Model.Icon" name="Icon" class=" form-control" />
+    <label>Başlık</label>
+    <input type="text" value="@Model.Title" name="Title" class="form-control" />
+    <label>Açıklama</label>
+    <input type="text" value="@Model.Description" name="Description" class="form-control" />
+    <br />
+    <button class="btn btn-secondary">KAYDET</button>
+
+
+</form>

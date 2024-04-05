@@ -1,0 +1,36 @@
+﻿@model MyPortfolio.Models.Tbl_Exp 
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>DENEYİM GÜNCELLE</h2>
+
+
+<form method="post">
+
+    <input type="hidden" name="ExpId" value="@Model.ExpId" />
+    <label>Başlangıç Yılı</label>
+    <input type="text" value="@Model.StarYear" name="StarYear"  class=" form-control" />
+    <br />
+    <label>Bitiş Yılı</label>
+    <input type="text" value="@Model.AndYear" name="AndYear" class=" form-control" />
+    <br />
+    <label>Pozisyon</label>
+    <input type="text" value="@Model.Title" name="Title" class=" form-control" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" value="@Model.Description" name="Description" class=" form-control" />
+    <br />
+    <label>Şirket</label>
+    <input type="text" value="@Model.Company" name="Company" class=" form-control" />
+    <br />
+    <label>Pozisyon</label>
+    <input type="text" value="@Model.Location" name="Location" class=" form-control" />
+    <br />
+
+
+    <button class="btn btn-secondary">KAYDET</button>
+
+
+</form>

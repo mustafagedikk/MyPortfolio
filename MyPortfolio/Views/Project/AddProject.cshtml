@@ -1,0 +1,26 @@
+﻿@model MyPortfolio.Models.Tbl_Projects
+@{
+    ViewBag.Title = "AddProject";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>PROJE EKLE</h2>
+
+<form method="post">
+
+    <label>İmage Url</label>
+    <input type="text" name="ImageUrl" class="form-control" />
+    <br />
+    <label>Proje Adı</label>
+    <input type="text" name="ProjectName" class="form-control" />
+    <br />
+    <label>Kategori Adı</label>
+
+    @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.category, "Kategori Seçin", new { @class = "form-control" })
+    <br />
+    <label>Github Url</label>
+    <input type="text" name="GithubUrl" class="form-control" />
+    <br />
+    <button class="btn btn-secondary">Kaydet</button>
+
+</form>

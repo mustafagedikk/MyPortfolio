@@ -1,0 +1,21 @@
+﻿@model  MyPortfolio.Models.Tbl_Skills
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>YETENEK GÜNCELLE</h2>
+
+<form method="post">
+
+    <input type="hidden" name="SkilId" value="@Model.SkilId" />
+    <label>Image Url</label>
+    <input type="text" value="@Model.SkilName" name="SkilName" class=" form-control" />
+    <label>Başlık</label>
+    <input type="text" value="@Model.Value" name="Value" class="form-control" />
+    
+    <br />
+    <button class="btn btn-secondary">KAYDET</button>
+
+
+</form>

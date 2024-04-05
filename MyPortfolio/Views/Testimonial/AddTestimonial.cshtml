@@ -1,0 +1,31 @@
+﻿@model MyPortfolio.Models.Tbl_Testimonials
+@{
+    ViewBag.Title = "AddTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AddTestimonial</h2>
+
+<form method="post">
+
+    <label>İmage Url</label>
+    <input type="text" name="ImageUrl" class="form-control" />
+    <br />
+    <label>Yorum</label>
+    <input type="text" name="Comment" class="form-control" />
+    <br />
+    <label>Ad Soyad </label>
+    <input type="text" name="NameSurname" class="form-control" />
+    <br />
+    <label>Pozisyon </label>
+    <input type="text" name="Title" class="form-control" />
+    <br />
+    <label>Statü durumu</label>
+    <input type="text" name="Status" class="form-control" />
+    <br />
+    <label>Yorum Zamanı</label>
+    <input type="text" name="CommentDate" class="form-control" />
+    <br />
+    <button class="btn btn-secondary">Kaydet</button>
+
+</form>
