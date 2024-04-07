@@ -1,4 +1,5 @@
 ﻿using MyPortfolio.Models;
+using MyPortfolio.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Web.Mvc;
 namespace MyPortfolio.Controllers
 {
     [Authorize]
+    [SessionTimeOut]
     public class AboutController : Controller
     {
         // GET: About
@@ -62,6 +64,8 @@ namespace MyPortfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+      
 
     }
 }

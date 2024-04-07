@@ -31,6 +31,7 @@ namespace MyPortfolio.Controllers
                 FormsAuthentication.SetAuthCookie(values.UserName, false);
                 //false cokie nin kalıcı olmaması için kullanıldı
                 Session["userName"] = values.UserName;
+                
                 return RedirectToAction("Index", "About");
             }
             else
@@ -38,6 +39,13 @@ namespace MyPortfolio.Controllers
                 ModelState.AddModelError("", "Kullanıcı Adı veya Şifre Yanlış");
                 return View();
             }
+        }
+
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Default");
         }
     }
 }
