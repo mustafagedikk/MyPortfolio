@@ -65,5 +65,33 @@ namespace MyPortfolio.Controllers
             
 
         }
+
+        public PartialViewResult DefaultExperiencePartial()
+        {
+            var values = db.Tbl_Exp.ToList();
+
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultTestimonialPartial()
+        {
+            var values = db.Tbl_Testimonials.ToList();
+            return PartialView(values); 
+        }
+
+        public PartialViewResult DefaultTeamPartial()
+        {
+            var values=db.Tbl_Teams.ToList();
+
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultSocialMediaPartial()
+        {
+            var contact=db.Tbl_Contacts.ToList();
+            var values=db.Tbl_SocialMedias.ToList();
+           
+            return PartialView(values);
+        }
     }
 }

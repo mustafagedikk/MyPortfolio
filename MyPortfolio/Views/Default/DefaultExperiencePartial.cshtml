@@ -1,0 +1,56 @@
+﻿@model   List<MyPortfolio.Models.Tbl_Exp>
+@{
+    Layout = null;
+}
+
+@{
+    int numara=3;
+}
+<!DOCTYPE html>
+
+<div class="experience" id="experience">
+    <div class="container">
+        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>My Resume</p>
+            <h2>Working Experience</h2>
+        </header>
+        <div class="timeline">
+
+            @foreach (var item in Model)
+            {
+                if (numara % 2 == 1)
+                {
+
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">@item.StarYear -@item.AndYear</div>
+                            <h2>@item.Title</h2>
+                            <h4>@item.Company, @item.Location</h4>
+                            <p>
+                                @item.Description
+                            </p>
+                        </div>
+                    </div>
+                    numara++;
+                }
+
+                else if (numara % 2 == 0)
+                {
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">@item.StarYear -@item.AndYear</div>
+                            <h2>@item.Description</h2>
+                            <h4>@item.Company, @item.Location</h4>
+                            <p>
+                                @item.Title
+                            </p>
+                        </div>
+                    </div>
+
+                    numara++;
+                }
+            }
+
+        </div>
+    </div>
+</div>

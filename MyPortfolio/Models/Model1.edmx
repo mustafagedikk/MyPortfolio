@@ -116,6 +116,9 @@
           <Property Name="SocialMediaName" Type="nvarchar" MaxLength="50" />
           <Property Name="Url" Type="nvarchar(max)" />
           <Property Name="Icon" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phonet" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Tbl_Teams">
           <Key>
@@ -284,6 +287,9 @@
           <Property Name="SocialMediaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phonet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Tbl_Teams">
           <Key>
@@ -465,6 +471,9 @@
           <EntitySetMapping Name="Tbl_SocialMedias">
             <EntityTypeMapping TypeName="MyportfolioModel.Tbl_SocialMedias">
               <MappingFragment StoreEntitySet="Tbl_SocialMedias">
+                <ScalarProperty Name="Phonet" ColumnName="Phonet" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="SocialMediaId" ColumnName="SocialMediaId" />
                 <ScalarProperty Name="SocialMediaName" ColumnName="SocialMediaName" />
                 <ScalarProperty Name="Url" ColumnName="Url" />

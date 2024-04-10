@@ -405,6 +405,10 @@
     <Content Include="Views\Default\DefaultSkillPartial.cshtml" />
     <Content Include="Views\Default\DefaultProjectPartial.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Default\DefaultExperiencePartial.cshtml" />
+    <Content Include="Views\Default\DefaultTestimonialPartial.cshtml" />
+    <Content Include="Views\Default\DefaultTeamPartial.cshtml" />
+    <Content Include="Views\Default\DefaultSocialMediaPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -18,5 +18,8 @@ namespace MyPortfolio.Models
         public string SocialMediaName { get; set; }
         public string Url { get; set; }
         public string Icon { get; set; }
+        public string Name { get; set; }
+        public string Mail { get; set; }
+        public string Phonet { get; set; }
     }
 }

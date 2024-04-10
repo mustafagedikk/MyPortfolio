@@ -51,8 +51,13 @@ namespace MyPortfolio.Controllers
             values.SocialMediaName = socialMedias.SocialMediaName;
             values.Url= socialMedias.Url; 
             values.Icon= socialMedias.Icon;
+            values.Phonet=socialMedias.Phonet;
+            values.Mail= socialMedias.Mail;
+            values.Name= socialMedias.Name;
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        
     }
 }

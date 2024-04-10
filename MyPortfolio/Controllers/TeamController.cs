@@ -47,17 +47,17 @@ namespace MyPortfolio.Controllers
 
         }
         [HttpPost]
-        public ActionResult UpdateTeam(Tbl_Teams teams)
+            public ActionResult UpdateTeam(Tbl_Teams teams)
         {
             var values = db.Tbl_Teams.Find(teams.TeamId);
             values.ImageUrl = teams.ImageUrl;
-            values.Title= teams.Title;
+            values.NameSurname= teams.NameSurname;
+            values.Description= teams.Description;
             values.TwitterUrl = teams.TwitterUrl;
             values.FacebookUrl= teams.FacebookUrl;
-            values.Description= teams.Description;
-            values.NameSurname = teams.NameSurname;
-            values.LinkedinUrl = teams.LinkedinUrl;
+            values.LinkedinUrl= teams.LinkedinUrl;
             values.İnstagramUrl = teams.İnstagramUrl;
+            values.Title = teams.Title;
             db.SaveChanges();
             return RedirectToAction("Index");
 
