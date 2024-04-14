@@ -1,0 +1,45 @@
+﻿@model List<MyPortfolio.Models.Tbl_Admin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>ŞİFRE DEĞİŞTİR</h2>
+<br />
+
+<table class="table table-bordered">
+    <tr>
+        <th>Kullanıcı Adı</th>
+        <th>Şifre</th>
+        <th>Şifre Güncelle</th>
+    </tr>
+    <tr>
+        @foreach (var item in Model)
+        {
+            <td>@item.UserName</td>
+
+            <td><span id="passwordPlaceholder">@item.Password</span></td>
+            <td>
+                <a href="UpdatePassword/Index/@item.AdminId" class="btn btn-info" ><i class="fas fa-pencil-alt"></i> Güncelle</a>
+            </td>
+
+        }
+
+
+    </tr>
+
+
+</table>
+
+
+<script>
+    function hidePassword(password) {
+        return '*'.repeat(password.length);
+    }
+
+    // Sayfa yüklendiğinde şifre alanını yıldız (*) karakterleri ile değiştir
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var passwordSpan = document.getElementById("passwordPlaceholder");
+        passwordSpan.innerText = hidePassword(passwordSpan.innerText);
+    });
+</script>

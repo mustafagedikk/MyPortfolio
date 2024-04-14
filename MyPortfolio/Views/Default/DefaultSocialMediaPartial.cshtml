@@ -3,23 +3,46 @@
     Layout = null;
 }
 
+@{int number = 0; }
 <div class="footer wow fadeIn" data-wow-delay="0.3s">
     <div class="container-fluid">
         <div class="container">
             <div class="footer-info">
-                <h2>@Model.</h2>
-                <h3>123 Street, New York, USA</h3>
-                <div class="footer-menu">
-                    <p>5555555555</p>
-                    <p>mustafatest@gmail.com</p>
-                </div>
+                @foreach (var item in Model)
+                {
+
+                    if (number == 0)
+                    {
+
+                        <h2>@item.Name</h2>
+                        <h3 style="color: #ffffff"> İstabul, Avrupa Yakası</h3>
+
+                        <div class="footer-menu">
+
+                            <p>@item.Phonet</p>
+                            <p>@item.Mail</p>
+
+                        </div>
+                        break;
+                    }
+
+
+                    number = 1;
+
+                }
+
                 <div class="footer-social">
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    @foreach (var item in Model)
+                    {
+                        <a href="@item.Url" target="_blank"><i class="@item.Icon" style="font-size: 34px"></i></a>
+                    }
                 </div>
+
+
             </div>
         </div>
         <div class="container copyright">
-            <p>&copy; <a href="/Default/Index"> Portfoliom</a>, Tüm Hakları Saklıdır | Mustafa Gedik | @DateTime.Now.Year @*Designed By*@ @*<a href="https://htmlcodex.com">HTML Codex</a>*@</p>
+            <p>&copy; <a href="/Default/Index"> Portfoliom</a>, Tüm Hakları Saklıdır | Mustafa Gedik | @DateTime.Now.Year </p>
         </div>
     </div>
 </div>

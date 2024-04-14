@@ -138,6 +138,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MessageController.cs" />
+    <Compile Include="Controllers\PasswordSettingController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SkillController.cs" />
@@ -409,6 +410,7 @@
     <Content Include="Views\Default\DefaultTestimonialPartial.cshtml" />
     <Content Include="Views\Default\DefaultTeamPartial.cshtml" />
     <Content Include="Views\Default\DefaultSocialMediaPartial.cshtml" />
+    <Content Include="Views\PasswordSetting\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

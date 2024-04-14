@@ -88,7 +88,7 @@ namespace MyPortfolio.Controllers
 
         public PartialViewResult DefaultSocialMediaPartial()
         {
-            var contact=db.Tbl_Contacts.ToList();
+
             var values=db.Tbl_SocialMedias.ToList();
            
             return PartialView(values);
