@@ -17,10 +17,10 @@
 
 <b>My Portfolio</b>
 <br>
-![Portfolio1](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/62a37d21-077a-444a-8dfe-ae0bc99e336e)
-![Project](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/d0e5ad53-fee2-4b14-9b7b-311265ba951d)
-![Social](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/476dd9f1-3ec3-42e5-9ed7-264392187f1e)
-![Testimon](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/01f908c0-0c0a-4d8f-a716-6b0e96849903)
-![Social](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/bc98087c-f83a-4ee5-a782-07bf2e1de958)
+![hakkımdaportfolio](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/3f8c9ed5-67a0-4453-99a4-a134c69eef91)
+![hizmetlerimportfolio](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/464d518a-6e23-4f1a-bca5-520852364cd6)
+![projelerim](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/a584331c-ea34-4923-8bc0-ff7a4ece03cd)
+![takım arkadaşlarım](https://github.com/mustafagedikk/MyPortfolio/assets/166130636/3ae2bf50-6241-4b62-be4c-24af6077ab93)
+
 
 
