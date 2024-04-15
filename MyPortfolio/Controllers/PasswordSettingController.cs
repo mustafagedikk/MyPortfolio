@@ -18,20 +18,20 @@ namespace MyPortfolio.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index(int id)
+        public ActionResult UpdatePassword(int id)
         {
-            var values=db.Tbl_Admin.ToList();
+            var values=db.Tbl_Admin.Find(id);
             return View(values);
 
         }
         [HttpPost]
-        public ActionResult Index(Tbl_Admin tbl_Admin)
+        public ActionResult UpdatePassword(Tbl_Admin tbl_Admin)
         {
             var values = db.Tbl_Admin.Find(tbl_Admin.AdminId);
-            values.UserName = tbl_Admin.UserName;
+            
             values.Password = tbl_Admin.Password;
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "PasswordSetting");
         }
     }
 }

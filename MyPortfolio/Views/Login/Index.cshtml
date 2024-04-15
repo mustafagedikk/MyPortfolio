@@ -3,28 +3,7 @@
     Layout = null;
 }
 
-@*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
-<br />
-
-
-
-
-<div class="container">
-
-    <h3>Kullanıcı giriş sayfası</h3>
-    <br />
-    <form method="post">
-        <label>Kullanıcı Adı</label>
-        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
-        <label>Şifre</label>
-        <input type="password" name="Password" class="form-control" />
-
-        <p class="text-danger">@Html.ValidationSummary()</p>
-        <button class="btn btn-outline-primary">Giriş Yap</button>
-    </form>
-
-</div>*@
 
 
 <!DOCTYPE html>
@@ -85,11 +64,9 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div class="text-muted">|| &copy; Admin Paneli @DateTime.Now.Year</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                
                             </div>
                         </div>
                     </div>

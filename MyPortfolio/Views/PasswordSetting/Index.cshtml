@@ -3,7 +3,8 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
+<br />
+<br />
 <h2>ŞİFRE DEĞİŞTİR</h2>
 <br />
 
@@ -20,7 +21,7 @@
 
             <td><span id="passwordPlaceholder">@item.Password</span></td>
             <td>
-                <a href="UpdatePassword/Index/@item.AdminId" class="btn btn-info" ><i class="fas fa-pencil-alt"></i> Güncelle</a>
+                <a href="/PasswordSetting/UpdatePassword/@item.AdminId" class="btn btn-info" ><i class="fas fa-pencil-alt"></i> Güncelle</a>
             </td>
 
         }

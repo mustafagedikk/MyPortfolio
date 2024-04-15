@@ -411,6 +411,7 @@
     <Content Include="Views\Default\DefaultTeamPartial.cshtml" />
     <Content Include="Views\Default\DefaultSocialMediaPartial.cshtml" />
     <Content Include="Views\PasswordSetting\Index.cshtml" />
+    <Content Include="Views\PasswordSetting\UpdatePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
